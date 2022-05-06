@@ -1,0 +1,46 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+print("You awake to the sound of seagulls and waves slowly breaking.\nSlowly standing up, you take a moment to recollate your situation. You sailed to this island looking for treasure.\nYou must've shipwrecked here. Before you lies two paths leading deeper into the heart of the island.")
+branch1 = input("Which path do you pick? type \"Left\" to go left or \"Right\" to go right. ")
+branch1.lower()
+if branch1 == "left":
+  print("After an hour of trekking deep into the island, it starts to rain heavily. \nYour trek through the forest is stopped when you come upon a fast moving rapid blocking your path. \nAn arrow whizzes past your head. You are unsure of who fired it but you know it most likely came from the path behind you.")
+  branch2 = input("Do you risk crossing the fast moving river, or wait to reason with your attacker? \nType \"Cross\" to cross the river or \"Wait\" to try and reason with your attacker. ")
+  branch2.lower()
+  if branch2 == "cross":
+      print("Moving quickly you decide to cross the river. The current was strong, but you were determined to get to the other side safely. \nYou made it! Soaking wet, you continue your hike towards the center of the island. \nYou have finally made it to your destination. Three doors colored Red, Blue, and Yellow are presented before you. One of them will lead you to the treasure.")
+      branch3 = input("Which door do you choose? Type either \"Red\" \"Blue\" or \"Yellow\". ")
+      branch3.lower()
+      if branch3 == "blue":
+        print("Slowly opening the door your eyes start to tear up at the site of a room filled with vast amounts of treasure. \nYou Win!")
+      else:
+        print("Peaking inside the yellow door you see nothing but darkness. \nYou take a step forward slipping into a pit of venomous snake. \nYou Are Dead!")
+    
+  else:
+    print("You stay by the riverside repeatedly yelling \"Im Peaceful!\". \nYou feel a sharp sting as you look down to find an arrow lodged in your chest. \nYou Are Dead!")
+    
+else:
+  print("Quickly making your way through the forest, the ground suddenly disappears beneath you.\nYou have fallen into spike trap\nYou Are Dead!")
